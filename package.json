@@ -9,8 +9,8 @@
     "build": "ng build",
     "build:prod": "npx ionic build --prod",
     "prepare:mobile-platform": "npx cap sync",
-    "build:android": "ionic capacitor build android",
-    "build:ios": "ionic capacitor build ios",
+    "build:android": "npx ionic capacitor build android",
+    "build:ios": "npx ionic capacitor build ios",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

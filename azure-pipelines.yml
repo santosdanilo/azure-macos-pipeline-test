@@ -21,17 +21,17 @@ steps:
       command: install
       workingDir: '$(System.DefaultWorkingDirectory)'
   - task: Npm@1 # Run npm run build
-    displayName: 'npm run build'
+    displayName: 'build'
     inputs:
       command: custom
       customCommand: run build
   - task: Npm@1 # Run npm run build
-    displayName: 'npx cap sync'
+    displayName: 'sync'
     nputs:
       command: custom
       customCommand: run prepare:mobile-platform
   - task: Npm@1 # Run npm run build
-    displayName: 'npx cap sync'
+    displayName: 'build:iosc'
     nputs:
       command: custom
       customCommand: run build:ios
