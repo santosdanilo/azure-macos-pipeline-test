@@ -25,3 +25,6 @@ steps:
     inputs:
       command: custom
       customCommand: run build
+  - publish: 'www/' # Publish App artifact
+    artifact: 'www'
+    displayName: 'Publishing Artifact'
