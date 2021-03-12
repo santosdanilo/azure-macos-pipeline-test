@@ -27,12 +27,12 @@ steps:
       customCommand: run build
   - task: Npm@1 # Run npm run build
     displayName: 'npx cap sync'
-    nputs:
+    inputs:
       command: custom
       customCommand: run prepare:mobile-platform
   - task: Npm@1 # Run npm run build
     displayName: 'npx cap sync'
-    nputs:
+    inputs:
       command: custom
       customCommand: run build:ios
   - publish: 'www/' # Publish App artifact
