@@ -1,0 +1,2 @@
+https://www.kevinboosten.dev/release-your-ionic-and-capacitor-app-via-appcenter
+
